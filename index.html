@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lucas M. Carranza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,12 +19,14 @@
 <body>
     <header>
         <div class="header">
-            <img src="/assets/logo_lmc.png" alt="" class="header__logo">
+            <a href="#home">
+                <img src="/assets/logo_lmc.png" alt="" class="header__logo">
+            </a>
             <ul class="header__menu">
-                <li class="header__menu-item"><a href="#" class="header__link">Inicio</a></li>
-                <li class="header__menu-item"><a href="#" class="header__link">Sobre mí</a></li>
-                <li class="header__menu-item"><a href="#" class="header__link">Proyectos</a></li>
-                <li class="header__menu-item"><button class="header__btn">Contacto</button></li>
+                <li class="header__menu-item"><a href="#home" class="header__link">Inicio</a></li>
+                <li class="header__menu-item"><a href="#about" class="header__link">Sobre mí</a></li>
+                <li class="header__menu-item"><a href="#projects" class="header__link">Proyectos</a></li>
+                <li class="header__menu-item"><a href="#contact" class="header__link header__btn">Contacto</a></li>
             </ul>
             <button class="menu__btn">
                 <i class="fa-solid fa-bars"></i>
@@ -34,7 +36,7 @@
 
     <main>
         <img src="/assets/bg_portafolio.jpg" alt="" class="main__bg">
-        <section class="home">
+        <section id="home" class="home">
             <div class="home__cont">
                 <div class="home__title">
                     <h1 class="home__title-greet">Hola, soy <span>Lucas Carranza</span></h1>
@@ -45,18 +47,20 @@
                     </p>
                 </div>
                 <div class="home__buttons">
-                    <button class="home__btn">Proyectos</button>
-                    <button class="home__btn home__btn--call">Contáctame</button>
+                    <a href="#projects" class="home__btn">Proyectos</a>
+                    <a href="#contact" class="home__btn">Contáctame</a>
+                    <a href="#" class="home__btn home__btn--call">Descargar CV</a>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="about__cont">
                 <h3>Sobre mí</h3>
                 <div class="about__info">
                     <img src="/assets/foto_perfil.png" alt="foto de perfil">
                     <div class="about__description">
+                        <h4>Lucas M. Carranza</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non corporis suscipit dicta dolor
                             vel velit, in asperiores repellat rem dolorum?</p>
                         <div class="about__socials">
@@ -86,7 +90,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="projects__cont">
                 <h3>Proyectos</h3>
                 <div class="projects__cards">
@@ -143,8 +147,7 @@
                         <img src="/assets/card-2.png" alt="" class="card__img">
                         <div class="card__info">
                             <h4>Proyecto</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt
-                                perferendis illum. Incidunt, quis! Rem, voluptatibus. Earum sequi vero placeat!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, excepturi. </p>
                             <ul class="card__info-techs-btn">
                                 <li class="tech">
                                     <img src="/assets/techs/html-01.png" alt="ico html">
@@ -186,38 +189,12 @@
                             <button class="card__info-btn">Demo</button>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <img src="/assets/card-2.png" alt="" class="card__img">
-                        <div class="card__info">
-                            <h4>Proyecto</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt
-                                perferendis illum. Incidunt, quis! Rem, voluptatibus. Earum sequi vero placeat!</p>
-                            <ul class="card__info-techs-btn">
-                                <li class="tech">
-                                    <img src="/assets/techs/html-01.png" alt="ico html">
-                                </li>
-                                <li class="tech">
-                                    <img src="/assets/techs/css-01.png" alt="ico css">
-                                </li>
-                                <li class="tech">
-                                    <img src="/assets/techs/js-01.png" alt="ico javascript">
-                                </li>
-                                <li class="tech">
-                                    <img src="/assets/techs/bootstrap-01.png" alt="ico bootstrap">
-                                </li>
-                            </ul>
-                            <button class="card__info-btn">Demo</button>
-                        </div>
-                    </div>
-
-                    
 
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact__container">
                 <div class="contact__info">
                     <h3>Contacto</h3>
@@ -252,10 +229,10 @@
             </div>
         </div>
         <ul class="footer__menu">
-            <li class="footer__menu-item"><a href="#" class="footer__link">Inicio</a></li>
-            <li class="footer__menu-item"><a href="#" class="footer__link">Sobre mí</a></li>
-            <li class="footer__menu-item"><a href="#" class="footer__link">Proyectos</a></li>
-            <li class="footer__menu-item"><button class="footer__btn">Contacto</button></li>
+            <li class="footer__menu-item"><a href="#home" class="footer__link">Inicio</a></li>
+            <li class="footer__menu-item"><a href="#about" class="footer__link">Sobre mí</a></li>
+            <li class="footer__menu-item"><a href="#projects" class="footer__link">Proyectos</a></li>
+            <li class="footer__menu-item"><a href="#contact" class="footer__btn">Contacto</a></li>
         </ul>
 
     </footer>
